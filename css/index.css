@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+    cursor: url('../images/cursor.png'), auto;
+}
+a{
+  text-decoration: none;
+}
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+body::before{
+    crossorigin: anonymous;
+}
+.bubble {
+    width: 440px;
+    background-color: #2b2b2b;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+.discord-card {
+  flex: 0 0 calc(30% - 20px);
+  width: 440px;
+  background-color: #2c2f33;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: rainbow 1s infinite linear;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .badges {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .badge {
+    margin-right: 5px;
+  }
+  @keyframes rainbow {
+    0% { box-shadow: 0 0 10px #ff0000; }
+    16.666% { box-shadow: 0 0 10px #ffaa00; }
+    33.333% { box-shadow: 0 0 10px #ffee00; }
+    50% { box-shadow: 0 0 10px #00ff00; }
+    66.666% { box-shadow: 0 0 10px #0000ff; }
+    83.333% { box-shadow: 0 0 10px #aa00ff; }
+    100% { box-shadow: 0 0 10px #ff00ff; }
+  }
